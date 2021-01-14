@@ -10,8 +10,17 @@ namespace VariablesCS2
 
             string fullName = "Josh Mann";
 
-            DateTime today = DateTime.Now;
+            var today = DateTime.Now.ToString("dd/MM/yyyy");
 
+
+            // Get input from user
+            Console.WriteLine("What's your name?");
+            fullName = Console.ReadLine();
+
+            Console.Write("Enter first number");
+            string firstNumberString = Console.ReadLine();
+            Console.Write("Enter second number");
+            string secondNumberString = Console.ReadLine();
 
             Console.WriteLine($"Coffee cups/day = {numberOfCupsOfCoffee}");
             Console.WriteLine($"Name = {fullName}");
